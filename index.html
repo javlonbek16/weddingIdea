@@ -87,7 +87,7 @@
       }
 
       .hero-section::before {
-        content: "💖 ✨ 💕 ⭐ 💖 ✨ 💕 ⭐";
+        /* content: "💖 ✨ 💕 ⭐ 💖 ✨ 💕 ⭐"; */
         position: absolute;
         top: 0;
         left: -100%;
@@ -97,18 +97,18 @@
         color: rgba(255, 255, 255, 0.15);
         display: flex;
         align-items: center;
-        animation: floatingHearts 20s linear infinite;
+        /* animation: floatingHearts 20s linear infinite; */
         z-index: 0;
       }
 
-      @keyframes floatingHearts {
+      /* @keyframes floatingHearts {
         0% {
           transform: translateX(-100%);
         }
         100% {
           transform: translateX(100%);
         }
-      }
+      } */
 
       @keyframes float {
         0%,
@@ -617,16 +617,8 @@
 
       <!-- Yashirin audio element -->
       <audio id="backgroundMusic" loop preload="auto">
-        <source
-          src="https://www.soundjay.com/misc/sounds/bell-ringing-05.wav"
-          type="audio/wav"
-        />
-        <source
-          src="https://file-examples.com/storage/fe86c86550bb8c07575f5cd/2017/11/file_example_MP3_700KB.mp3"
-          type="audio/mp3"
-        />
         <!-- Sizning romantik muzikangizni qo'yishingiz mumkin -->
-        <source src="wedding-music.mp3" type="audio/mp3" />
+        <source src="kelibdi.mp3" type="audio/mp3" />
       </audio>
 
       <div class="invitation-card">
@@ -828,7 +820,7 @@
       }
 
       // Har 3 soniyada yulduz yaratish
-      setInterval(createStar, 3000);
+    //   setInterval(createStar, 3000);
 
       // ESTA QOLARLI ANIMATSIYALAR
 
@@ -852,7 +844,7 @@
       }
 
       // Har 2 soniyada qalb yaratish
-      setInterval(createFallingHeart, 2000);
+    //   setInterval(createFallingHeart, 2000);
 
       // 2. Uchuvchi gullar
       function createFloatingFlower() {
@@ -873,7 +865,7 @@
       }
 
       // Har 8 soniyada gul yaratish
-      setInterval(createFloatingFlower, 8000);
+    //   setInterval(createFloatingFlower, 8000);
 
       // 3. MAIN ESTA QOLARLI ANIMATSIYA - Love Wave
       function createLoveWave() {
